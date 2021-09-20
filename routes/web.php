@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,7 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
+// Route::get('/', [PostController::class, 'index']);
+
+Route::get('/', [UsersController::class, 'index']);
+Route::get('/about', [UsersController::class, 'about']);
