@@ -36,7 +36,17 @@ class PostController extends Controller
         //Delete
         // Post::where('id', 2)->delete();
 
-        $post = Post::find(1);
-        $post->delete();
+        // $post = Post::find(1);
+        // $post->delete();
+        $post = Post::all();
+            // foreach($post as $p){
+            //     Post::where('id',$p->id)->delete();
+            // }
+        return view('Home',compact('post'));
+    }
+
+    public function about()
+    {
+        return view('About');
     }
 }

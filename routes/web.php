@@ -15,7 +15,10 @@ use App\Http\Controllers\UsersController;
 |
 */
 
-// Route::get('/', [PostController::class, 'index']);
+Route::get('/', [PostController::class, 'index']);
+Route::get('/about', [PostController::class, 'about']);
 
-Route::get('/', [UsersController::class, 'index']);
-Route::get('/about', [UsersController::class, 'about']);
+
+
+// Route::get('/', [UsersController::class, 'index']);
+// Route::get('/about', [UsersController::class, 'about']);
